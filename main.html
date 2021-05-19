@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
+
+    <title>KEC Event Registration</title>
+</head>
+
+<body>
+        <div class="Container">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    {{ form }}
+                    <div class="form-group">
+                        <h2 style="font-family: 'Roboto Condensed', sans-serif;font-weight: bold;">
+                            Infocruise 2K22 registration</h2>
+                        <!-- <label for="name">Team Caption Name : </label> -->
+                        <input type="text" id="name" name="name" placeholder="Enter Your Team Leader Name" required><br><br>
+                        <!-- <label for="rollno">Rollno : </label> -->
+                        <input type="text" id="rollno" name="rollno" placeholder="Enter Your Roll No" required><br><br>
+                        <!-- <label for="email"> Email id : </label> -->
+                        <input type="email" id="email" name="email" placeholder="user@emailid.com"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3}$" required><br><br>
+                        <!-- <label for="phone"> Phone no : </label> -->
+                        <input type="number" id="phone" name="phone" placeholder="phone no" pattern="[0-9]{10}"
+                            required><br><br>
+                        <!-- <label for="part">Participants Name & Rollno : </label><br> -->
+                        <textarea name="part" id="part" rows="3" cols="70"
+                            placeholder="Participant name Participant Rollno" required></textarea><br><br>
+                        <!-- <label for="dept">Dept : </label> -->
+                        <select name="dept" class="custom-select" id="inputGroupSelect02" required>
+                            <option selected>Select your Department Name*</option>
+                            <option value="cse">CSE</option>
+                            <option value="it">IT</option>
+                            <option value="ece">ECE</option>
+                            <option value="mts">MTS</option>
+                            <option value="eee">EEE</option>
+                            <option value="e&i">E&I</option>
+                            <option value="mech">MECH</option>
+                            <option value="chem">CHEM</option>
+                            <option value="ft">FT</option>
+                            <option value="auto">AUTO</option>
+                            <option value="civil">CIVIL</option>
+                        </select><br><br>
+                        <!-- <label for="Event Registration">Year</label> -->
+                        <select id="Year" name="Year">
+                            <option selected>Select Year of study</option>
+                            <option value="I">I</option>
+                            <option value="II">II</option>
+                            <option value="III">III</option>
+                            <option value="IV">IV</option>
+                        </select><br><br>
+                        <label for="sect" style="font-size: 20px;font-family: 'Roboto Condensed', sans-serif;">Section : </label>
+                        <input type="radio" id="A" name="sect" value="A">
+                        <label for="I" style="font-family: 'Roboto Condensed', sans-serif;">A</label>
+                        <input type="radio" id="B" name="sect" value="B">
+                        <label for="II" style="font-family: 'Roboto Condensed', sans-serif;">B</label>
+                        <input type="radio" id="C" name="sect" value="C">
+                        <label for="C" style="font-family: 'Roboto Condensed', sans-serif;">C</label>
+                        <input type="radio" id="D" name="sect" value="D" required>
+                        <label for="IV" style="font-family: 'Roboto Condensed', sans-serif;">D</label><br></br>
+                        <label for="event" style="font-size: 20px;font-family: 'Roboto Condensed', sans-serif;">Event : </label><br>
+                        <input type="checkbox" id="v1" name="tag[]" value="1" >
+                        <label for="v1" style="font-size: 20px;font-family: 'Roboto Condensed', sans-serif;">Paper Presentation</label></br>
+                        <input type="checkbox" id="v2" name="tag[]" value="2">
+                        <label for="v2" style="font-size: 20px;font-family: 'Roboto Condensed', sans-serif;">Project Presentation</label></br>
+                        <input type="checkbox" id="v3" name="tag[]" value="3">
+                        <label for="v3" style="font-size: 20px;font-family: 'Roboto Condensed', sans-serif;">Quiz</label></br>
+                        <input type="checkbox" id="v4" name="tag[]" value="4">
+                        <label for="v4" style="font-size: 20px;font-family: 'Roboto Condensed', sans-serif;">Coding</label></br>
+                        <input type="checkbox" id="v5" name="tag[]" value="5">
+                        <label for="v5" style="font-size: 20px;font-family: 'Roboto Condensed', sans-serif;">Non Technical</label></br></br>
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            <div class="svg-part">
+                <div class="letter-part">
+                    <div style="display: flex;flex-direction: column;">
+                        <h5>Managed by</h5>
+                        <img src="C:\Users\Sanjaikumar\pictures\sanjai.jpg" alt="photo requried">
+                        <h5>Kongu Engineering College</h5>
+                    </div>
+                </div>
+                        <img src="{% static '/images/Group 24.svg' %}" alt="svg" class="svgg">
+            </div>
+    </div>
+
+</body>
+</body>
+
+</html>
+
+    
+ 
+
