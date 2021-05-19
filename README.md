@@ -1,1 +1,1 @@
-# Event-Registration-Web-page-using-AWS
+This goal of this project is to build an registration web page for a college event using AWS cloud computing, where the student can enroll their information. The web page is secure that means only the admin of the web page can view, edit or delete the information stored in the database. AWS Elastic Cloud Computing & Django framework are used in this project.
