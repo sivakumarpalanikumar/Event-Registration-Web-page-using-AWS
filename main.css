@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr;
+    height: 100vh;
+}
+
+.form-group{
+    display: block;
+    grid-column: 1/2;
+    padding:0px 320px ;
+}
+.form-group h2{
+    text-align: center;
+    margin-top: 52px;
+    margin-bottom: 50px;
+}
+
+.svg-part{
+    grid-column: 2/3;
+    height: 100%;
+    
+    background-color: #EBF3FA;
+}
+.svgg{
+    position: absolute;
+    bottom: 0;
+    margin: auto 50px;
+}
+
+input[type=text] {
+    width: 300px;
+    height: 40px;
+    padding: 5px 15px ;
+    font-size: 15px;
+    border:1px solid black;
+    color: black;
+    border-radius: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+input[type=text]::placeholder{
+    color: black;
+}
+
+input[type=email] {
+    width: 300px;
+    height: 40px;
+    padding: 5px 15px ;
+    font-size: 15px;
+    border:1px solid black;
+    color: black;
+    border-radius: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+input[type=email]::placeholder{
+    color: black;
+}
+
+input[type=number] {
+    width: 300px;
+    height: 40px;
+    padding: 5px 15px ;
+    font-size: 15px;
+    border:1px solid black;
+    color: black;
+    border-radius: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+input[type=number]::placeholder{
+    color: black;
+}
+
+textarea{
+     width: 300px;
+    height: 40px;
+    padding: 5px 15px ;
+    font-size: 15px;
+    border:1px solid black;
+    color: black;
+    border-radius: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+textarea::placeholder{
+    color: black;
+}
+
+select{
+    width: 330px;
+    height: 40px;
+    padding: 5px 15px ;
+    font-size: 15px;
+    border:1px solid black;
+    color: black;
+    border-radius: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+input[type=radio] {
+    font-size: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+input[type=submit] {
+    width: 330px;
+    height: 40px;
+    padding: 5px 15px ;
+    font-size: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #2B478B;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.letter-part{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: #FAFAFA;
+    font-size: 25px;
+    padding: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    border-radius: 5px;
+    width: max-content;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.061), 0 6px 20px 0 rgba(0, 0, 0, 0.034);
+}
+
+
